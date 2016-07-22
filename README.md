@@ -49,3 +49,24 @@
         - 將所有ngModule, ngController, ngService檔案加上requirejs所需設定define(['angular'], function () {});
 
 4. 使用gulp結合js檔、使用sass編寫css、監控變化、建立伺服器
+    - sass
+        - `npm i --save-dev gulp-sass gulp-sourcemaps gulp-concat gulp-autoprefixer gulp-minify-css`
+        - 新增資料夾src/sass
+        - 編寫gulp.task('sass'), 監控變化
+            - sass
+            - tmp
+            - concat
+            - autoprefixer
+            - minifyCss
+            - sourcemaps
+        -index.html引入css
+
+    - 建立伺服器 & livereload
+        - `npm i --save-dev browser-sync`
+        - 編寫gulp.task('serve')
+
+    - js
+        - `npm i --save-dev webpack webpack-stream gulp-rename gulp-uglify`
+        - 新增資料夾src/js
+        - 編寫gulp.task('js'), 監控變化
+        - index.html重新引入angular.js, bundle.js
