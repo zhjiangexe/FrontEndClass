@@ -1,0 +1,15 @@
+{
+  "name": "front_end_class",
+  "version": "1.0.0",
+  "description": "前端開發教室",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1"
+  }
+}

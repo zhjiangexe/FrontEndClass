@@ -1,0 +1,22 @@
+{
+  "name": "front_end_class",
+  "description": "前端開發教室",
+  "main": "index.js",
+  "authors": [
+    "rocktsuki <rocktsuki@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "2.2.0",
+    "angular": "1.5.8",
+    "bootstrap": "3.3.6"
+  }
+}
