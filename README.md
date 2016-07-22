@@ -31,3 +31,21 @@
         - 編寫main.js透過require.js引入相依的js檔
 
 3. angular起手式
+    - 先將index.html上的require.js那行註解，其方式會再回來討論
+    - angualr
+        - 建立ng.module app
+        - 建立ng.controller indexControler
+        - 建立ng.service firstService
+        - 讓indexControler引入使用firstService
+        - 建立第二個ng.module xModule
+        - xModule底下直接寫一個ng.service xService
+        - 讓app引入xModule
+        - 讓indexControler使用xService
+
+    - 先將前面的部分做個版控，之後在4.gulp還有其他做法
+    - require.js
+        - 重新解開index.html上的require.js註解，並將其他引入的js註解
+        - 設定main.js: paths, require, 載入後的程序設定
+        - 將所有ngModule, ngController, ngService檔案加上requirejs所需設定define(['angular'], function () {});
+
+4. 使用gulp結合js檔、使用sass編寫css、監控變化、建立伺服器

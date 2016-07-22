@@ -5,6 +5,10 @@
         "commonjs": true
     },
     "extends": "eslint:recommended",
+    "globals": {
+        "define": false,
+        "angular": false
+    },
     "rules": {
         "no-console": ["warn"],
         "indent": ["warn", 4],

@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>FrontEndClass</title>
     <link href="lib/bootstrap/css/bootstrap.min.css">
     <script src="lib/require.js" data-main="js/main.js"></script>
 </head>
+
 <body>
-    
+    <div ng-controller="indexControler as index">
+        <h1 ng-bind="index.rock"></h1><br/>
+        <input ng-model="index.rock" />
+        <input type="button" value="很重要" ng-click="index.repeat(index.rock)" />
+        <p ng-bind="index.important"></p>
+    </div>
 </body>
+
 </html>
